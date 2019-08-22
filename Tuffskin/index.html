@@ -1,179 +1,226 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script src="jquery.js"></script>
-<title>TuffSkin Bedliners</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/review-slider.css">
+    <script src="jquery.js"></script>
+    <title>TuffSkin Bedliners</title>
 </head>
 
 <body>
-<!--Begin Navbar=================================================-->
+    <!--Begin Navbar=================================================-->
     <div class="tuffskin_header">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <img class="navbar-brand" src="assets/img/tuffskinlogo.png" alt="tuffskin logo" style="height:150px;"></img>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="aboutus.html">ABOUT US </a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="services.html">SERVICES <span class="caret"></span></a>
+        <div class="image-overlay">
+            <nav class="navbar navbar-default sticky">
+                <div class="container">
+                    <img class="navbar-brand" src="assets/img/tuffskinlogo.png" alt="tuffskin logo"
+                        style="height:150px;"></img>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="aboutus.html">ABOUT US </a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="services.html">SERVICES <span
+                                        class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="truck-bedliners.html">Spray-In Truck Bedliners</a></li>
                                     <li><a href="commercial-use.html">Commercial Use</a></li>
                                     <li><a href="custom-sprays.html">Custom Sprays</a></li>
                                 </ul>
-                        </li>
-                        <li><a href="gallery.html">GALLERY</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-<!--Begin hero========================================================================-->
-    <div class="hero">
-        <h1>Spray-In Bedliners</h1>
-            <p></p>
-        <div class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Request A Quote</div>
-<!--Begin Request A Quote Modal======================================================-->
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <h1 class="blkFont">Request A Quote</h1>
-                        <form>
-                            <h2 class="blkFont">Tell us about yourself</h2>
-                            <div class="form-group">
-                                <label for="first_Name_Input" class="redFont">First Name</label>
-                                <input type="name" class="form-control" id="first_Name_Input" placeholder="John">
-                            </div>
-                            <div class="form-group">
-                                <label for="last_Name_Input" class="redFont">Last Name</label>
-                                <input type="name" class="form-control" id="first_Name_Input" placeholder="Doe">
-                            </div>
-                            <h2 class="blkFont">What can we help you with?</h2>
-                            <div class="form-group">
-                                <label for="serviceSelect" class="redFont">Area of interest</label>
-                                <select class="form-control" id="serviceSelect">
-                                    <option>{please choose one}</option>
-                                    <option>Spray in truck bedliner</option>
-                                    <option>Commerical vehicle</option>
-                                    <option>Custom Spray</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </form>
+                            </li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                        </ul>
                     </div>
                 </div>
+            </nav>
+            <!--Begin hero========================================================================-->
+            <div class="hero">
+                <h1>Spray-In Bedliners</h1>
+                <p></p>
+                <div class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Request A Quote
+                </div>
             </div>
         </div>
     </div>
-<!--Spacer=======================================================-->
-    <div class="container-fluid" style="background-color: rgb(204, 0, 0); height:10px;">
-        <div class="row text-center">
-        </div>
-    </div>
-<!--Begin Service Display=======================================-->
-    <div class="site_Container">
+    <!--Spacer=======================================================-->
+    <div class="container-fluid spacer"></div>
+    <!--Begin Service Display=======================================-->
+    <div class="container" id="service-icons">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="service_Icons">
                     <img src="assets/img/service_icons/truck_3.png" class="img-responsive" alt="Spray-in Bedliners" />
                 </div>
-                <h2 class="text-center">Spray-In Truck Bedliners</h2>
-                <button type="button" class="btn learnMoreBtn">Learn More</button>
+                <h2 class="text-center">Spray-In Bedliners</h2>
+                <button type="button" class="btn learnMoreBtn">Learn More<i class="fa fa-arrow-right"></i></button>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="service_Icons">
                     <img src="assets/img/service_icons/truck_2.png" class="img-responsive" alt="Commerical Use" />
                 </div>
-                <h2 class="text-center">Commerical Vehicles</h2>                            
-                <button type="button" class="btn learnMoreBtn">Learn More</button>
+                <h2 class="text-center">Commerical Vehicles</h2>
+                <button type="button" class="btn learnMoreBtn">Learn More<i class="fa fa-arrow-right"></i></button>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="service_Icons">
                     <img src="assets/img/service_icons/rzr_1.png" class="img-responsive" alt="custom sprays" />
                 </div>
                 <h2 class="text-center">Custom Applications</h2>
-                <button type="button" class="btn learnMoreBtn">Learn More</button>
+                <button type="button" class="btn learnMoreBtn">Learn More<i class="fa fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
-<!--Spacer=====================================-->
-    <div class="container-fluid" style="background-color: white; color:white;">
-        <div class="row text-center">
-            <h3>​</h3>
-        </div>
-    </div>
-<!--Begin About Us Section=====================================-->
-    <div class="container_1">
-        <div class="site_Container">
+    <!--Begin About Us Section=====================================-->
+    <div class="container-fluid" id="aboutus">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-6 col-xs-12 text-center">
+                <div class="col-md-6 col-lg-6 col-xs-12">
                     <h2>Tuff Skin Bedliners</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button type="button" class="btn aboutUsBtn">About Us</button>
+                    <hr>
+                    <p>At Tuff Skin, we specialize in Custom Urethane Applications. We’ve been spraying truck beds (and
+                        other things) since 1994. We know that purchasing a new truck or other vehicle is a big
+                        investment and applying a spray-in bedliner is the best way to protect that investment!
+                        <br>
+                        <br>
+                        We stand behind our product and our customer service, offering a lifetime warranty on all Tuff
+                        Skin work. We are focused on customer satisfaction and are successful because of our hands-on
+                        approach to our business. We offer a nationwide warranty and stand behind our promise to satisfy
+                        every customer. Tuff Skin currently has dealers Nationwide and will continue to expand our
+                        dealer Network</p>
+                    <button type="button" class="btn aboutUsBtn">About Us</button>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xs-12">
-                    <iframe width="560" height="360" src="https://www.youtube.com/embed/kvDVRDfY3io" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/kvDVRDfY3io" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    </div>      
-<!--Begin Testomonial Slider===============================-->
-    <div class="content-slider">
-        <div class="slider">
-            <div class="mask">
-                <ul>
-                    <li class="anim1">
-                        <div class="quote">My bedliner is amazing! Had a previous one by LINE X and my Father had a Inyati. Tuff Skin looks and performs better!!!</div>
-                        <div class="source">- Mike Smith</div>
-                    </li>
-                    <li class="anim2">
-                        <div class="quote">Dale is awesome. Great price for a great product. I was in and out in no time. I'll be back with my wifes truck next week.</div>
-                        <div class="source">- Dion Alaniz</div>
-                    </li>
-                    <li class="anim3">
-                        <div class="quote">Quality work and pricing was very reasonable! FAST and friendly service. I’d highly recommend this company if you’re looking for a spray in bedliner! They did a great job on my NEW 2018 Ford F-150.</div>
-                        <div class="source">- Paul Webb</div>
-                    </li>
-                    <li class="anim4">
-                        <div class="quote">I will highly recommend them to my friends.</div>
-                        <div class="source">- Charles Taylor</div>
-                    </li>
-                    <li class="anim5">
-                        <div class="quote">Great Customer Service and they definitely do an awesome job. Was shopping around on prices to bedline the whole back of my cargo van and they definetely took care of me.</div>
-                        <div class="source">- EightySixd</div>
-                    </li>
-                </ul>
+    </div>
+    <!--Begin Request a Quote Banner-->
+    <div class="container-fluid request-banner">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10">
+                    <h3>Call now and save up to $50 off your next bedliner</h3>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn btn-primary">Call Now</button>
+                </div>
             </div>
         </div>
     </div>
-<!--Spacer=====================================-->
-    <div class="container-fluid" style="background-color: rgb(204, 0, 0); color:white; height:10px;">
+    <!--Begin Process Section=======================================-->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-lg-12">
+                    <h2>Our Process</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3">
+                    <img src="https://linex.com/app/consumer/assets/gallery_images/257a39d728c45c562c49f84575fddd4b.jpg?v=1564967289"
+                        alt="Mask" class="img-responsive">
+                    <h3>Mask</h3>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://linex.com/app/consumer/assets/gallery_images/bc7784a075be67a30b1659b7f9a8a60b.jpg?v=1564967289"
+                        alt="Mask" class="img-responsive">
+                    <h3>Clean/Prep</h3>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://linex.com/app/consumer/assets/gallery_images/fc874e73bf09ba3158a55eef92f977c8.jpg?v=1564967256"
+                        alt="Mask" class="img-responsive">
+                    <h3>Spray</h3>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://linex.com/app/consumer/assets/gallery_images/d1f47d654caad53d1b604c7c05547f8f.jpg?v=1564967289"
+                        alt="Mask" class="img-responsive">
+                    <h3>Complete</h3>
+                </div>
+                <div class="col-lg-10"></div>
+                <div class="col-lg-2">
+                    <p>See More <i class="fa fa-arrow-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Begin Testomonial Slider===============================-->
+    <div id="testomonial-slider" class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <i class="fa fa-quote-right"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="content-slider">
+            <div class="slider">
+                <div class="mask">
+                    <ul>
+                        <li class="anim1">
+                            <div class="quote">My bedliner is amazing! Had a previous one by LINE X and my Father had a
+                                Inyati. Tuff Skin looks and performs better!!!</div>
+                            <div class="source">- Mike Smith</div>
+                        </li>
+                        <li class="anim2">
+                            <div class="quote">Dale is awesome. Great price for a great product. I was in and out in no
+                                time. I'll be back with my wifes truck next week.</div>
+                            <div class="source">- Dion Alaniz</div>
+                        </li>
+                        <li class="anim3">
+                            <div class="quote">Quality work and pricing was very reasonable! FAST and friendly service.
+                                I’d
+                                highly recommend this company if you’re looking for a spray in bedliner! They did a
+                                great
+                                job on my NEW 2018 Ford F-150.</div>
+                            <div class="source">- Paul Webb</div>
+                        </li>
+                        <li class="anim4">
+                            <div class="quote">I will highly recommend them to my friends.</div>
+                            <div class="source">- Charles Taylor</div>
+                        </li>
+                        <li class="anim5">
+                            <div class="quote">Great Customer Service and they definitely do an awesome job. Was
+                                shopping
+                                around on prices to bedline the whole back of my cargo van and they definetely took care
+                                of
+                                me.</div>
+                            <div class="source">- EightySixd</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Spacer=====================================-->
+    <div class="container-fluid spacer">
         <div class="row text-center">
         </div>
     </div>
-<!--Begin Footer==========================================-->
+    <!--Begin Footer==========================================-->
     <footer class="footer-distributed">
         <div class="footer-left">
             <div class="row">
-                    <img src="assets/img/tuffskinlogo.png" alt="tuffskin logo" ></img>
+                <img src="assets/img/tuffskinlogo.png" alt="tuffskin logo"></img>
             </div>
             <p class="footer-links">
                 <a href="index.html">Home</a>
@@ -191,7 +238,7 @@
         <div class="footer-center">
             <div>
                 <i class="fa fa-map-marker"></i>
-                    <p><span>9642 E. Main St,</span> Mesa, AZ 85207</p>
+                <p><span>9642 E. Main St,</span> Mesa, AZ 85207</p>
             </div>
             <div>
                 <i class="fa fa-phone"></i>
@@ -204,8 +251,9 @@
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
-            <span>About Tuff-Skin Bedliners</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                <span>About Tuff-Skin Bedliners</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
             </p>
             <div class="footer-icons">
                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -214,7 +262,41 @@
             </div>
         </div>
     </footer>
-        
+
+    <!--Begin Request A Quote Modal======================================================-->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <h2 class="blkFont">Request A Quote</h2>
+                <form>
+                    <h3 class="blkFont">Tell us about yourself</h3>
+                    <div class="form-group">
+                        <label for="first_Name_Input" class="redFont">First Name</label>
+                        <input type="name" class="form-control" id="first_Name_Input" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_Name_Input" class="redFont">Last Name</label>
+                        <input type="name" class="form-control" id="first_Name_Input" placeholder="Doe">
+                    </div>
+                    <h2 class="blkFont">What can we help you with?</h2>
+                    <div class="form-group">
+                        <label for="serviceSelect" class="redFont">Area of interest</label>
+                        <select class="form-control" id="serviceSelect">
+                            <option>{please choose one}</option>
+                            <option>Spray in truck bedliner</option>
+                            <option>Commerical vehicle</option>
+                            <option>Custom Spray</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -223,8 +305,9 @@
 
 
 
-                        
-        
+
+
+
 
 
 
