@@ -1,4 +1,8 @@
 /*About us hero class*/
+li .active {
+    font-weight: bold;
+    color: var(--main-red);
+  }
 .hero1 {
     background: url("../img/hero_img4.jpg") no-repeat;
     height: 400px;
