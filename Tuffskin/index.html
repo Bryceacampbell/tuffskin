@@ -4,56 +4,68 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/review-slider.css">
-    <script src="jquery.js"></script>
+    <script src="assets/jquery.js"></script>
     <title>TuffSkin Bedliners</title>
 </head>
 
 <body>
     <!--Begin Navbar=================================================-->
-    <div class="tuffskin_header">
-        <div class="image-overlay">
-            <nav class="navbar navbar-default sticky">
-                <div class="container">
-                    <img class="navbar-brand" src="assets/img/tuffskinlogo.png" alt="tuffskin logo"
-                        style="height:150px;"></img>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="aboutus.html">ABOUT US </a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="services.html">SERVICES <span
-                                        class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="truck-bedliners.html">Spray-In Truck Bedliners</a></li>
-                                    <li><a href="commercial-use.html">Commercial Use</a></li>
-                                    <li><a href="custom-sprays.html">Custom Sprays</a></li>
-                                </ul>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/tuffskinlogo.png" alt="tuffskin logo" class="logo"></img>
+            </a>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="services.html"
+                            aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="truck-bedliners.html">Truck Bedliners</a>
                             </li>
-                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li>
+                                <a class="dropdown-item" href="commercial-use.html">Commercial Use</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="custom-sprays.html">Custom Sprays</a>
+                            </li>
                         </ul>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Begin hero========================================================================-->
+    <div class="container-fluid" id="homepage-hero">
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Spray-In Bedliners</h1>
                 </div>
-            </nav>
-            <!--Begin hero========================================================================-->
-            <div class="hero">
-                <h1>Spray-In Bedliners</h1>
-                <p></p>
-                <div class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Request A Quote
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Request A Quote
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,23 +75,29 @@
     <!--Begin Service Display=======================================-->
     <div class="container" id="service-icons">
         <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Our Services</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="service_Icons">
-                    <img src="assets/img/service_icons/truck_3.png" class="img-responsive" alt="Spray-in Bedliners" />
+                    <img src="assets/img/service_icons/truck_3.png" class="img-fluid" alt="Spray-in Bedliners" />
                 </div>
                 <h2 class="text-center">Spray-In Bedliners</h2>
                 <button type="button" class="btn learnMoreBtn">Learn More<i class="fa fa-arrow-right"></i></button>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="service_Icons">
-                    <img src="assets/img/service_icons/truck_2.png" class="img-responsive" alt="Commerical Use" />
+                    <img src="assets/img/service_icons/truck_2.png" class="img-fluid" alt="Commerical Use" />
                 </div>
                 <h2 class="text-center">Commerical Vehicles</h2>
                 <button type="button" class="btn learnMoreBtn">Learn More<i class="fa fa-arrow-right"></i></button>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="service_Icons">
-                    <img src="assets/img/service_icons/rzr_1.png" class="img-responsive" alt="custom sprays" />
+                    <img src="assets/img/service_icons/rzr_1.png" class="img-fluid" alt="custom sprays" />
                 </div>
                 <h2 class="text-center">Custom Applications</h2>
                 <button type="button" class="btn learnMoreBtn">Learn More<i class="fa fa-arrow-right"></i></button>
@@ -91,15 +109,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-xs-12">
-                    <h2>Tuff Skin Bedliners</h2>
+                    <h2><strong>Tuff-Skin</strong> Bedliners</h2>
                     <hr>
-                    <p>At Tuff Skin, we specialize in Custom Urethane Applications. We’ve been spraying truck beds (and
+                    <p>At <strong>Tuff-Skin</strong>, we specialize in Custom Urethane Applications. We’ve been spraying
+                        truck beds (and
                         other things) since 1994. We know that purchasing a new truck or other vehicle is a big
                         investment and applying a spray-in bedliner is the best way to protect that investment!
                         <br>
                         <br>
-                        We stand behind our product and our customer service, offering a lifetime warranty on all Tuff
-                        Skin work. We are focused on customer satisfaction and are successful because of our hands-on
+                        We stand behind our product and our customer service, offering a lifetime warranty on all
+                        <strong>Tuff-Skin</strong>
+                        work. We are focused on customer satisfaction and are successful because of our hands-on
                         approach to our business. We offer a nationwide warranty and stand behind our promise to satisfy
                         every customer. Tuff Skin currently has dealers Nationwide and will continue to expand our
                         dealer Network</p>
@@ -127,7 +147,7 @@
         </div>
     </div>
     <!--Begin Process Section=======================================-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="process-section">
         <div class="container">
             <div class="row">
                 <div class="text-center col-lg-12">
@@ -135,30 +155,34 @@
                     <hr>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center process-image-container">
                 <div class="col-lg-3">
                     <img src="https://linex.com/app/consumer/assets/gallery_images/257a39d728c45c562c49f84575fddd4b.jpg?v=1564967289"
-                        alt="Mask" class="img-responsive">
+                        alt="Mask" class="img-fluid">
                     <h3>Mask</h3>
                 </div>
                 <div class="col-lg-3">
                     <img src="https://linex.com/app/consumer/assets/gallery_images/bc7784a075be67a30b1659b7f9a8a60b.jpg?v=1564967289"
-                        alt="Mask" class="img-responsive">
+                        alt="Mask" class="img-fluid">
                     <h3>Clean/Prep</h3>
                 </div>
                 <div class="col-lg-3">
                     <img src="https://linex.com/app/consumer/assets/gallery_images/fc874e73bf09ba3158a55eef92f977c8.jpg?v=1564967256"
-                        alt="Mask" class="img-responsive">
+                        alt="Mask" class="img-fluid">
                     <h3>Spray</h3>
                 </div>
                 <div class="col-lg-3">
                     <img src="https://linex.com/app/consumer/assets/gallery_images/d1f47d654caad53d1b604c7c05547f8f.jpg?v=1564967289"
-                        alt="Mask" class="img-responsive">
+                        alt="Mask" class="img-fluid">
                     <h3>Complete</h3>
                 </div>
+            </div>
+            <div class="row see-more">
                 <div class="col-lg-10"></div>
-                <div class="col-lg-2">
-                    <p>See More <i class="fa fa-arrow-right"></i></p>
+                <div class="col-lg-2 text-right">
+                    <a href="aboutus.html">
+                        <p>See More <i class="fa fa-arrow-right"></i></p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -170,14 +194,13 @@
                 <i class="fa fa-quote-right"></i>
             </div>
         </div>
-        <hr>
         <div class="content-slider">
             <div class="slider">
                 <div class="mask">
                     <ul>
                         <li class="anim1">
                             <div class="quote">My bedliner is amazing! Had a previous one by LINE X and my Father had a
-                                Inyati. Tuff Skin looks and performs better!!!</div>
+                                Inyati. <strong>Tuff-Skin</strong> looks and performs better!!!</div>
                             <div class="source">- Mike Smith</div>
                         </li>
                         <li class="anim2">
@@ -251,7 +274,7 @@
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
-                <span>About Tuff-Skin Bedliners</span>
+                <span>About <strong>Tuff-Skin</strong> Bedliners</span>
                 Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
                 vehicula sit amet.
             </p>
