@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp aboutus.html $DEPLOYPATH
+    - /bin/cp commercial-use.html $DEPLOYPATH
+    - /bin/cp custom-sprays.html $DEPLOYPATH
+    - /bin/cp truck-bedliners.html $DEPLOYPATH
+    - /bin/cp gallery.html $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
