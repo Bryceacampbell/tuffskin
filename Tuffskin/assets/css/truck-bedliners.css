@@ -1,44 +1,46 @@
-/*About us hero class*/
 li .active {
     font-weight: bold;
     color: var(--main-red);
-  }
+}
 .hero1 {
     background: url("../img/hero_img4.jpg") no-repeat;
     height: 400px;
     background-size: cover;
     color:var(--main-white);
-  }
-  .hero1_Content {
+}
+.hero1_Content {
     text-align: center;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--main-white);
-  }
-  .hero1 h1 {
+}
+.hero1 h1 {
     color: var(--main-white);
     font-weight: bold;
     font-size: 48px;
-  }
-  
-#myCarousel {
+}
+#versus-section hr {
+    margin-top: 0px;
+}
+#versus-caption {
+    margin-top: 20px;
+}
+#intro-img {
     margin-top: 30px;
 }
 
-#gallery-section {
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-#gallery-section h2 {
-    color: #ffffff;
-}
-.gallery-item {
-    padding: 10px 10px 10px 10px;
-}
-#why-tuffskin {
+#quote-form {
+    margin-top: 30px;
     margin-bottom: 30px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+#quote-form button {
+    float: right;
+}
+

@@ -15,5 +15,6 @@ $(window).on("scroll", function() {
     else {
           $('nav').removeClass('navbar-background');
           $('.logo').removeClass('shrink-logo')
+
     }
 })

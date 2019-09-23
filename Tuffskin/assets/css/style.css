@@ -13,6 +13,10 @@ hr {
 strong {
   color: var(--main-red);
 }
+.white-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .fa-arrow-right {
   margin-left: 5px;
   color: #3F3F3F;
@@ -26,6 +30,7 @@ strong {
   background: #1C1C1C;
   height: 100px;
   transition: 1s;
+  border-bottom: 5px solid var(--main-red);
 }
 
 .shrink-logo {
@@ -61,7 +66,7 @@ li .active {
 #homepage-hero .container {
     text-align: center;
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -96,10 +101,7 @@ li .active {
   height:10px;
 }
 /*Service Display*/
-#service-icons {
-  margin-bottom: 40px;
-  margin-top: 30px;
-}
+
 .service_Icons {
     padding: 0px 10px 0px 10px;
 }
@@ -110,14 +112,12 @@ li .active {
 .service_Icons:hover {
     transform: scale(1.1);
 }
-
-#aboutus {
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
-    padding: 40px;
-    color: var(--main-white);
+.grey-container {
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  padding: 30px;
+  color: var(--main-white);
 }
-
 .learnMoreBtn {
     color: #3F3F3F;
     background-color: transparent;
@@ -136,9 +136,6 @@ li .active {
     background: -webkit-linear-gradient(to right, #b31217, #e52d27); 
     background: linear-gradient(to right, #b31217, #e52d27);
     color:var(--main-white);
-}
-.learnMoreBtn:active {
-    transform:translateY(1px);
 }
 .aboutUsBtn {
     color: var(--main-white);
@@ -197,7 +194,7 @@ h2 {
 
 /* Footer*/
 .footer-distributed{
-	background-color: #252525;
+	background-color: #1C1C1C;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -276,8 +273,8 @@ h2 {
 }
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
+	color:  var(--main-white);
+	font-size: 17px;
 	font-weight: normal;
 	margin: 0;
 }
