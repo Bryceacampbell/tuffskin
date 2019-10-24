@@ -17,7 +17,7 @@
   
   .slider {
     height: 320px;
-    width: 680px;
+    width: auto;
     margin: 40px auto 0;
     overflow: visible;
     position: relative;
@@ -36,7 +36,7 @@
   }
   
   .slider li {
-    width: 680px;
+    width: auto;
     height: 320px;
     position: absolute;
     top: -325px;

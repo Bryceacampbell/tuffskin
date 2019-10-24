@@ -42,6 +42,24 @@ strong {
   margin: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .fixed-top {
+    position: relative;
+  }
+  #homepage-hero .container {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .logo {
+    height: 75px;
+  }
+  #navbar {
+    background: #1C1C1C;
+    border-bottom: 5px solid var(--main-red);
+
+  }
+}
 nav ul li a {
   text-decoration: none;
   color: #ffffff;
@@ -122,6 +140,12 @@ li .active {
   padding: 30px;
   color: var(--main-white);
 }
+
+@media only screen and (max-width: 600px) {
+  .grey-container {
+    padding: 20px;
+  }
+}
 .learnMoreBtn {
     color: #3F3F3F;
     background-color: transparent;
@@ -152,7 +176,8 @@ li .active {
     padding: 14px 20px;
     transition:0.2s;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
+    
 }
 .aboutUsBtn:hover {
     background: #e52d27; 
